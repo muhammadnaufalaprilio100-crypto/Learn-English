@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>English learning website</h1>
+<div class="menu-btn" id="menuBtn" onclick="toggleMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+</header>
+
+<div class="contact-bar">
+  <span class="label">My Contact :</span>
+   <div class="contact-list">
+
+  <a href="web.html">About Web</a>
+  <a href="kosakata.html">Vocabulary</a>
+  <a href=""></a>
+</div>
+</div>
+<div class="content">
+  <p></p>
+  <h2>Welcome to Muhammad Naufal Aprilio's website</h2>
+  <p></p>
+  </div>
+  <div class="container">
+    </div>
+    <div class="card">
+       <h3> 1.</h3>
+       <!-- SIDEBAR -->
+<div class="sidebar" id="sidebar">
+  
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="project.html">Project</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+<script>
+function toggleMenu() {
+  const sidebar = document.getElementById("sidebar");
+  const overlay = document.getElementById("overlay");
+  const menuBtn = document.getElementById("menuBtn");
+
+  sidebar.classList.toggle("active");
+  overlay.classList.toggle("active");
+  menuBtn.classList.toggle("active");
+}
+</script>
+</body>
+</html>

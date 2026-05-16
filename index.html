@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Home Portofolio</h1>
+<div class="menu-btn" id="menuBtn" onclick="toggleMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+</header>
+
+<div class="contact-bar">
+  <span class="label">My Contact :</span>
+   <div class="contact-list">
+
+  <a href="web.html">About Web</a>
+  <a href="#"></a>
+  <a href="#"></a>
+</div>
+</div>
+<div class="content">
+  <p>___________________________________________________</p>
+  <h2>Welcome to Muhammad Naufal Aprilio's website</h2>
+  <p>___________________________________________________</p>
+  </div>
+  <div class="container">
+    
+    <div class="card">
+       <h3> 1.</h3>
+      <p>This is my portfolio website, which I use to showcase my work, projects, and the development of my software development skills..</p>
+    </div>
+      <div class="card">
+      <h3>2.</h3>
+      <p>This website was created during my 11th grade, specifically in April 2026. At that time, I was still at the very beginning of my coding journey, with only about a week of self-learning experience. Instead of continuing to learn only through theory, I challenged myself to build this portfolio website to make the process more practical, engaging, and meaningful.</p>
+      <div class="container"
+      <p>   Throughout its development, I explored various resources, including guidance from AI, and gradually learned each concept to gain a deeper understanding of how everything works.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>3
+      </h3>
+      <p>This website was first launched on Sunday, April 11, 2026, and continues to be developed over time.</p>
+    </div>
+      
+      <div class="card">
+      <h3>Project 2</h3>
+      <p>Deskripsi project kedua saya.</p>
+    </div>
+
+    <div class="card">
+      <h3>Project 3</h3>
+      <p>Deskripsi project ketiga saya.</p>
+      </giv>
+  
+  </div>
+  </div>
+</section>
+
+<!-- SIDEBAR -->
+<div class="sidebar" id="sidebar">
+  
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="project.html">Project</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+<script>
+function toggleMenu() {
+  const sidebar = document.getElementById("sidebar");
+  const overlay = document.getElementById("overlay");
+  const menuBtn = document.getElementById("menuBtn");
+
+  sidebar.classList.toggle("active");
+  overlay.classList.toggle("active");
+  menuBtn.classList.toggle("active");
+}
+</script>
+</body>
+</html>
