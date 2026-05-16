@@ -1,0 +1,232 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* BODY */
+body {
+  background: #f2f2f2;
+}
+
+/* HEADER */
+header {
+  background: #1f2a3a;
+  color: white;
+  padding: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+}
+
+/* HAMBURGER BUTTON */
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.menu-btn span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: white;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* ANIMASI JADI X */
+.menu-btn.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menu-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* CONTACT BAR */
+.contact-bar {
+  background: #020c2b;
+  color: white;
+  padding: 15px;
+}
+.contact-list {
+  display: flex;
+  overflow-x: auto;   /* ini bikin bisa geser */
+  gap: 15px;
+  margin-top: 5px;
+  scroll-behavior: smooth;
+}
+
+.contact-list::-webkit-scrollbar {
+  display: none;
+}
+
+.contact-list a {
+  flex: 0 0 auto;
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  white-space: nowrap;
+}
+.contact-bar span {
+  color: #00aaff;
+  font-weight: bold;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #555;
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 70%px;
+  height: 100%;
+  background:linear-gradient(180deg, #111111, #333333, #999999);
+  padding-top: 60px;
+  transition: 0.4s;
+  z-index: 1000;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+}
+
+.sidebar a {
+  display: block;
+  color: #fff;
+  padding: 18px 25px;
+  margin: 10px 15px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* HOVER EFFECT */
+.sidebar a:hover {
+  background: linear-gradient(45deg, #00aaff, #0055ff);
+  transform: translateX(8px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* GARIS KIRI */
+.sidebar a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background: #00aaff;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.sidebar a:hover::before {
+  opacity: 1;
+}
+
+/* ANIMASI MASUK */
+.sidebar a {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.sidebar.active a {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.sidebar.active a:nth-child(1) { transition-delay: 0.2s; }
+.sidebar.active a:nth-child(2) { transition-delay: 0.3s; }
+.sidebar.active a:nth-child(3) { transition-delay: 0.6s; }
+.sidebar.active a:nth-child(4) { transition-delay: 0.7s; }
+
+/* SIDEBAR AKTIF */
+.sidebar.active {
+  right: 0;
+}
+.sidebar a {
+  border-bottom: 1px solid rgba(226,225,225,0.3);
+}
+/* OVERLAY */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  z-index: 999;
+}
+
+.overlay.active {
+  display: block;
+}
+/* CONTAINER */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* TEXT */
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+}.
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
